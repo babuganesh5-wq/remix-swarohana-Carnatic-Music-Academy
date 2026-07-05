@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Swarohana Carnatic Music Academy",
+  "description": "Beta v1 Demo - Advanced Indian classical music practice tools, billing suites, custom CRM lead management, showcase platforms, and the signature electronic Shruti Box and Thalam rhythmic metronome.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

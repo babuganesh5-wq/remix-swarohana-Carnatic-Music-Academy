@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+  
+  --color-gold: #F5C518;
+  --color-gold-light: #FFD700;
+  --color-dark: #0a0a0a;
+  --color-darker: #050505;
+  --color-cream: #f5f0e8;
+}
+
+:root {
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+  --color-gold: #F5C518;
+  --color-gold-light: #FFD700;
+  --color-dark: #0a0a0a;
+  --color-darker: #050505;
+  --color-cream: #f5f0e8;
+  --color-brown: #3d2b1f;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-darker);
+  color: #e8e0d5;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Scrollbar customization matching Swarohana's luxurious dark gold palette */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-light);
+}
+
+/* Custom glow effect */
+.gold-glow {
+  text-shadow: 0 0 20px rgba(245, 197, 24, 0.35);
+}
+
+.gold-box-glow {
+  box-shadow: 0 10px 40px rgba(245, 197, 24, 0.12);
+}
+
+.gold-border-glow:hover {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 30px rgba(245, 197, 24, 0.18);
+}
+
+/* Animation for floating musical notes in background */
+@keyframes floatNote {
+  0% {
+    transform: translateY(110vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.note-animation {
+  animation: floatNote 16s linear infinite;
+}
